@@ -1,8 +1,8 @@
+import NavLink from "./navigation";
 import logoSm from "../images/icons/logo-sm.png";
 import searchIco from "../images/icons/search-icon-sm.png";
 import cart from "../images/icons/cart-sm.png";
 import { Component } from "react";
-import navLink from "./navigation";
 class Header extends Component {
 	render() {
 		return (
@@ -22,13 +22,13 @@ class Header extends Component {
 							</a>
 							<div className="navbar-collapse collapse">
 								<ul className="navbar-nav nav-justified w-100 nav-fill">
-									<navLink link="/mac" linkName="Mac" />
-									<navLink link="/iphone" linkName="iphone" />
-									<navLink link="/ipad" linkName="ipad" />
-									<navLink link="/watch" linkName="Watch" />
-									<navLink link="/tv" linkName="TV" />
-									<navLink link="/music" linkName="Music" />
-									<navLink link="/support" linkName="Support" />
+									<NavLink link="/mac" linkName="Mac" />
+									<NavLink link="/iphone" linkName="iphone" />
+									<NavLink link="/ipad" linkName="ipad" />
+									<NavLink link="/watch" linkName="Watch" />
+									<NavLink link="/tv" linkName="TV" />
+									<NavLink link="/music" linkName="Music" />
+									<NavLink link="/support" linkName="Support" />
 									<li className="nav-item">
 										<a className="nav-link js-scroll-trigger" href="/search/">
 											<img src={searchIco} alt="" />

@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 
-class navLink extends Component {
+class NavLink extends Component {
 	render() {
 		return (
-			<div>
-				<li className="nav-item">
-					<a className="nav-link js-scroll-trigger" href={this.props.link}>
-						{this.props.linkName}
-					</a>
-				</li>
-			</div>
+			<li className="nav-item">
+				<a className="nav-link js-scroll-trigger" href={this.props.link}>
+					{this.props.linkName}
+				</a>
+			</li>
 		);
 	}
 }
 
-export default navLink;
+export default NavLink;
