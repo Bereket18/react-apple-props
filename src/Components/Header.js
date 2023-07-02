@@ -2,7 +2,7 @@ import logoSm from "../images/icons/logo-sm.png";
 import searchIco from "../images/icons/search-icon-sm.png";
 import cart from "../images/icons/cart-sm.png";
 import { Component } from "react";
-
+import navLink from "./navigation";
 class Header extends Component {
 	render() {
 		return (
@@ -20,44 +20,15 @@ class Header extends Component {
 							<a className="navbar-brand mx-auto" href="/">
 								<img src={logoSm} alt="" />
 							</a>
-
 							<div className="navbar-collapse collapse">
 								<ul className="navbar-nav nav-justified w-100 nav-fill">
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/mac/">
-											Mac
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/iphone/">
-											iphone
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/ipad/">
-											ipad
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/watch/">
-											watch
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/tv/">
-											tv
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/Music/">
-											Music
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/Support/">
-											Support
-										</a>
-									</li>
+									<navLink link="/mac" linkName="Mac" />
+									<navLink link="/iphone" linkName="iphone" />
+									<navLink link="/ipad" linkName="ipad" />
+									<navLink link="/watch" linkName="Watch" />
+									<navLink link="/tv" linkName="TV" />
+									<navLink link="/music" linkName="Music" />
+									<navLink link="/support" linkName="Support" />
 									<li className="nav-item">
 										<a className="nav-link js-scroll-trigger" href="/search/">
 											<img src={searchIco} alt="" />
