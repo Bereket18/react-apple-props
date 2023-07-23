@@ -1,67 +1,105 @@
-import NavLink from "./navigation";
-import logoSm from "../images/icons/logo-sm.png";
-import searchIco from "../images/icons/search-icon-sm.png";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+// import { useEffect } from "react";
+import logo from "../images/icons/logo-sm.png";
+import search from "../images/icons/search-icon-sm.png";
 import cart from "../images/icons/cart-sm.png";
-import { Component } from "react";
-class Header extends Component {
-	render() {
-		return (
-			<section1>
-				<div className="nav-wrapper fixed-top">
-					<div className="container">
-						<nav className="navbar navbar-toggleable-sm navbar-expand-md">
-							<button
-								className="navbar-toggler navbar-toggler-right"
-								type="button"
-								data-toggle="collapse"
-								data-target=".navbar-collapse">
-								☰
-							</button>
-							<a className="navbar-brand mx-auto" href="/">
-								<img src={logoSm} alt="" />
-							</a>
-							<div className="navbar-collapse collapse">
-								<ul className="navbar-nav nav-justified w-100 nav-fill">
-									<NavLink link="/mac" linkName="Mac" />
-									<NavLink link="/iphone" linkName="iphone" />
-									<NavLink link="/ipad" linkName="ipad" />
-									<NavLink link="/watch" linkName="Watch" />
-									<NavLink link="/tv" linkName="TV" />
-									<NavLink link="/music" linkName="Music" />
-									<NavLink link="/support" linkName="Support" />
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/search/">
-											<img src={searchIco} alt="" />
-										</a>
-									</li>
-									<li className="nav-item">
-										<a className="nav-link js-scroll-trigger" href="/cart/">
-											<img src={cart} alt="" />
-										</a>
-									</li>
-								</ul>
-							</div>
-						</nav>
+// import logo2 from "../images/icons/apple-logo.png";
+// import search2 from "../images/icons/search-interface-symbol.png";
+// import cart2 from "../images/icons/shopping-bag.png";
+// import $ from "jquery";
+
+function NavHead() {
+	let [Clicked, setClicked] = useState(false);
+
+	function handeleClick() {
+		setClicked(!Clicked);
+	}
+	return (
+		<>
+			<header className="header-sticky container-fluid">
+				<div id="responsive">
+					<div id="logo">
+						<Link to="/">
+							<img src={logo} alt="Apple-logo" />
+						</Link>
+					</div>
+					<div id="search">
+						<Link to="/search">
+							<img src={search} alt="search-icon" />
+						</Link>
+					</div>
+					<div id="cart">
+						<Link to="/cart">
+							<img src={cart} alt="cart-icon" />
+						</Link>
+					</div>
+					<div id="Toggler" onClick={handeleClick}>
+						<i className={Clicked ? "fas fa-times" : "fas fa-bars"}></i>
 					</div>
 				</div>
+				<nav
+					id="navigation"
+					className={Clicked ? "#navigation active" : "#navigation"}>
+					<ul>
+						<li id="dis-lef">
+							<Link to="/">
+								<img src={logo} alt="Apple-logo" />
+							</Link>
+						</li>
 
-				<section className="alert-section top-50">
-					<div className="container">
-						<div className="alert-title">We’re open for you.</div>
-						<div className="alert-text">
-							Our retail stores are closed, but you can buy our products here
-							online and get fast, free delivery. If you need help finding the
-							right product or have a question on your order, chat online with a
-							Specialist or call 1-800-MY-APPLE.
-							<br />
-							For service and Support, visit{" "}
-							<a href="https://support.apple.com/">support.apple.com</a>.
-						</div>
-					</div>
-				</section>
-			</section1>
-		);
-	}
+						<li id="hidden">
+							<Link to="/store">Store</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/mac">Mac</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/ipad">ipad</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/iphone">iphone</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/watch">Watch</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/AirPods">AirPods</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/TVAndHome">TV & Home</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/Entertainment">Entertainment</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/Accessories">Accessories</Link>
+						</li>
+						<li id="hidden">
+							<Link to="/Support">Support</Link>
+						</li>
+						<li id="dis-lef">
+							<Link to="/search">
+								<img src={search} alt="search-icon" />
+							</Link>
+						</li>
+						<li id="dis-lef">
+							<Link to="/Cart">
+								<img src={cart} alt="cart-icon" />
+							</Link>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<span className="credit container-fluid">
+				<div>
+					Get $200–$570 in credit toward an iPhone 14 when you trade in an
+					iPhone 11 or newer.<sup>1</sup> <Link to="/">Shop iphone</Link>
+				</div>
+			</span>
+		</>
+	);
 }
 
-export default Header;
+export default NavHead;

@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "product_id": 3,
+      "product_name": "iPhone SE",
+      "product_url": "iphonese",
+      "description_id": 1,
+      "product_brief_description": "Lots to love. Less to spend.",
+      "product_description": "iPhone SE packs our most powerful chip into our most popular size at our most affordable price. Itâ€™s just what youâ€™ve been waiting for.",
+      "product_img": "https://www.apple.com/v/iphone/home/aj/images/overview/hero/hero_iphone_se__barrz3dlvxea_small_2x.jpg",
+      "product_link": "https://www.apple.com/shop/buy-iphone/iphonese",
+      "price_id": 1,
+      "starting_price": "$399",
+      "price_range": "From $9.54/mo. or $229 with trade-in.*"
+    },
+    {
+      "product_id": 4,
+      "product_name": "iPhone 11",
+      "product_url": "iphone11",
+      "description_id": 2,
+      "product_brief_description": "Lots to love. Less to spend.",
+      "product_description": "Lots to love. Less to spend.",
+      "product_img": "https://www.apple.com/v/iphone/home/aj/images/overview/hero/hero_iphone_11__bsnxu2gpf98i_small_2x.jpg",
+      "product_link": "https://www.apple.com/shop/buy-iphone/iphone-11",
+      "price_id": 2,
+      "starting_price": "$449",
+      "price_range": "From $18.70/mo. or $449 with trade-in.*"
+    },
+    {
+      "product_id": 5,
+      "product_name": "iPhone 11 Pro",
+      "product_url": "iphone11pro",
+      "description_id": 3,
+      "product_brief_description": "Pro cameras. Pro display. Pro performance.",
+      "product_description": "A transformative tripleâ€‘camera system that adds tons of capability without complexity. An unprecedented leap in battery life. And a mindâ€‘blowing chip that doubles down on machine learning and pushes the boundaries of what a smartphone can do. Welcome to the first iPhone powerful enough to be called Pro.",
+      "product_img": "https://www.apple.com/v/iphone/home/aj/images/overview/hero/hero_iphone_11_pro__d2lf9zrtcv8m_small_2x.jpg",
+      "product_link": "https://www.apple.com/shop/buy-iphone/iphone-11-pro",
+      "price_id": 3,
+      "starting_price": "$679",
+      "price_range": "From $28.29/mo. or $679 with trade-in.*"
+    }
+  ]
+}

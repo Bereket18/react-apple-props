@@ -1,0 +1,5 @@
+'https://youtube.googleapis.com/youtube/v3/search?part=snippet%2Cid&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=[YOUR_API_KEY]
+apple = DA92AcpbsK0QcUsyXW8XlqLTE
+Api-Key = ********************************
+
+Result = https://youtube.googleapis.com/youtube/v3/search?part=snippet%2Cid&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=***********************

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class NavLink extends Component {
 	render() {
 		return (
 			<li className="nav-item">
-				<a className="nav-link js-scroll-trigger" href={this.props.link}>
+				<Link className="nav-link js-scroll-trigger" to={this.props.link}>
 					{this.props.linkName}
-				</a>
+				</Link>
 			</li>
 		);
 	}

@@ -1,60 +1,74 @@
-import React, { Component } from "react";
-import TvLogo from "../images/icons/apple-tv-logo.png";
-import Banker from "../images/home/banker.png";
+// import TvLogo from "../images/icons/apple-tv-logo.png";
+// import Banker from "../images/home/banker.png";
+import { Link } from "react-router-dom";
+import Arcade from "../images/icons/arcade.png";
 
-class SectionTwo extends Component {
-	render() {
-		return (
-			<sec>
-				<section class="fifth-heghlight-wrapper">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="left-side-wrapper col-sm-12 col-md-6">
-								<div class="left-side-container">
-									<div class="top-logo-wrapper">
-										<div class="logo-wrapper">
-											<img src={TvLogo} alt="" />
-										</div>
-									</div>
+import React from "react";
 
-									<div class="tvshow-logo-wraper">
-										<img src={Banker} alt="" />
-									</div>
-
-									<div class="watch-more-wrapper">
-										<a href="/">Watch now on the Apple TV App</a>
-									</div>
-								</div>
-							</div>
-							<div class="right-side-wrapper col-sm-12 col-md-6">
-								<div class="right-side-container">
-									<div class="top-logo-wrapper">
-										<div class="logo-wrapper">
-											<img src="images/icons/watch-series5-logo.png" alt="" />
-										</div>
-									</div>
-									<div class="description-wraper">
-										With the Always-On Retina display.
-										<br />
-										You’ve never seen a watch like this.
-									</div>
-									<div class="links-wrapper">
+function SectionTwo() {
+	return (
+		<>
+			<section className="fifth-heghlight-wrapper">
+				<div className="container-fluid">
+					<div className="row">
+						<div className="left-side-wrapper col-sm-12 col-md-6">
+							<div className="left-side-container">
+								<div className="top-logo-wrapper">
+									{/* <div className="logo-wrapper">
+										<img src={TvLogo} alt="" />
+									</div> */}
+									<div className="title-wraper">iphone 14</div>
+									<div className="description-wraper">Wonderful.</div>
+									<div className="links-wrapper">
 										<ul>
 											<li>
-												<a href="/">Learn more</a>
+												<Link to="/">Learn more</Link>
 											</li>
 											<li>
-												<a href="/">Buy</a>
+												<Link to="/">Buy</Link>
 											</li>
 										</ul>
 									</div>
 								</div>
+
+								<div className="tvshow-logo-wraper">
+									<img src="/" alt="" />
+								</div>
+
+								<div className="watch-more-wrapper">
+									<Link to="/">Watch now on the Apple TV App</Link>
+								</div>
+							</div>
+						</div>
+						<div className="right-side-wrapper col-sm-12 col-md-6">
+							<div className="right-side-container">
+								<div className="top-logo-wrapper">
+									<div className="logo-wrapper">
+										<img src={Arcade} alt="" />
+									</div>
+								</div>
+								<div className="description-wraper">
+									With the Always-On Retina display.
+									<br />
+									You’ve never seen a watch like this.
+								</div>
+								<div className="links-wrapper">
+									<ul>
+										<li>
+											<Link to="/">Learn more</Link>
+										</li>
+										<li>
+											<Link to="/">Buy</Link>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</sec>
-		);
-	}
+				</div>
+			</section>
+		</>
+	);
 }
+
 export default SectionTwo;
