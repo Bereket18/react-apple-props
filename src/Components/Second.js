@@ -8,9 +8,9 @@ function Second() {
 				<div className="container">
 					<div className="new-alert">New</div>
 
-					<div className="title-wraper bold black">MacBook Air</div>
+					<div className="title-wraper bold white">MacBook Air</div>
 
-					<div className="description-wrapper black">
+					<div className="description-wrapper white">
 						Twice the speed. Twice the storage.
 					</div>
 
